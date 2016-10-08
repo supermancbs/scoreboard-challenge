@@ -7,7 +7,7 @@ class ScoreBoard extends Component {
 
     return (
       <div>
-        <FinishedGames games={this.props.store.finished[0]}/>
+        <FinishedGames games={this.props.store.finished}/>
       </div>
     )
   }
