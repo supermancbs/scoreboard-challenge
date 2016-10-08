@@ -21,6 +21,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <App store={store}/>,
+  <App />,
   document.getElementById('root')
 );

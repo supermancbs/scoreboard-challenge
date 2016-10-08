@@ -1,10 +1,12 @@
 import React from 'react'
-let FinishedGame = ({homeScore, awayScore}) => {
+
+let InProgressGame = ({homeScore, awayScore, currentInning}) => {
 
     return (
       <div>
         home score: {homeScore}
         away score: {awayScore}
+        inning : {currentInning}
         <br/><br/>
       </div>
     )
@@ -12,4 +14,4 @@ let FinishedGame = ({homeScore, awayScore}) => {
 
 
 
-export default FinishedGame
+export default InProgressGame
