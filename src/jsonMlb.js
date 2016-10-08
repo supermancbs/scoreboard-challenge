@@ -1,4 +1,4 @@
-json = {
+const json = {
   "sports": [
     {
       "name": "baseball",
