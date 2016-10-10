@@ -1,7 +1,7 @@
 #Score Board Challenge
 
-For this challenge I parsed a JSON in order to display some of the data through
-a scoreboard. I decided to use React, and I the information that I needed from
+For this challenge I parsed a JSON file in order to display some of the data through
+a scoreboard. I decided to use React, and I parsed the information that I needed from
 the JSON into a single object called the store. The store was then passed down
 in the props to the various React components.  
 
