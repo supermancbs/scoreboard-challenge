@@ -1,13 +1,23 @@
 import React from 'react'
+import { Media, Col } from 'react-bootstrap'
 
-let InProgressGame = ({homeScore, awayScore, currentInning}) => {
-
+let InProgressGame = ({homeTeamName, homeScore, awayTeamName, awayScore, inning}) => {
     return (
-      <div>
-        home score: {homeScore}
-        away score: {awayScore}
-        inning : {currentInning}
-        <br/><br/>
+      <div className="box-game">
+        <Col sm={3} md={2} >
+          <Media.Left left>
+              <img width={40} height={40} src="https://yt3.ggpht.com/-cXAzzpKrBQk/AAAAAAAAAAI/AAAAAAAAAAA/MaprkNIV-MY/s900-c-k-no-rj-c0xffffff/photo.jpg" alt="Image"/>
+          </Media.Left>
+          <Media.Body left>
+            <div className="team-name">
+            {homeTeamName}: {homeScore}
+            <br/>
+            {awayTeamName}: {awayScore}
+            <br/>
+            Inning : {inning}
+            </div>
+          </Media.Body>
+        </Col>
       </div>
     )
 }

@@ -1,20 +1,22 @@
 import React from 'react'
 import { Col, Media } from 'react-bootstrap'
 
-let FinishedGame = ({homeScore, awayScore}) => {
+let FinishedGame = ({homeTeamName, awayTeamName, homeScore, awayScore}) => {
 
     return (
-      <div>
-      <Col sm={6} md={3} >
-        <Media.Left>
-            <img width={64} height={64} src="/assets/thumbnail.png" alt="Image"/>
-        </Media.Left>
-          <Media.Body>
-            <Media.Heading>Media heading</Media.Heading>
-              home score: {homeScore}
-              away score: {awayScore}
+
+      <div className="box-game">
+        <Col sm={3} md={2} >
+          <Media.Left left>
+              <img width={40} height={40} src="https://yt3.ggpht.com/-cXAzzpKrBQk/AAAAAAAAAAI/AAAAAAAAAAA/MaprkNIV-MY/s900-c-k-no-rj-c0xffffff/photo.jpg" alt="Image"/>
+          </Media.Left>
+          <Media.Body left>
+            <div className="team-name">
+            {homeTeamName}: {homeScore}
+            <br/>
+            {awayTeamName}: {awayScore}
+            </div>
           </Media.Body>
-          <br/><br/>
         </Col>
       </div>
 

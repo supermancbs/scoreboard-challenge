@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FinishedGames from './finishedGames'
 import ScheduledGames from './scheduledGames'
 import InProgressGames from './inProgressGames'
-import { Tabs, Tab } from 'react-bootstrap'
+import { Tabs, Tab, Navbar } from 'react-bootstrap'
 
 class ScoreBoard extends Component {
 
@@ -10,6 +10,7 @@ class ScoreBoard extends Component {
 
     return (
       <div>
+
       <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
         <Tab eventKey={1} title="Finished Games">
           <FinishedGames games={this.props.store.finished}/>
@@ -21,6 +22,7 @@ class ScoreBoard extends Component {
             <InProgressGames games={this.props.store.inGame}/>
           </Tab>
       </Tabs>
+
 
 
 
