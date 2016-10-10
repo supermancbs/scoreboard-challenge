@@ -9,10 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <p className="App-intro">
+        <div className="App-intro">
           <ScoreBoard store={store}/>
-        </p>
+        </div>
       </div>
     );
   }
