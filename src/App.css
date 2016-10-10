@@ -22,7 +22,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.date-game {
+  font-size: 90%;
+  text-align: left;
+}
 
 .team-name {
     font-size: 90%;
+    text-align: left;
 }
