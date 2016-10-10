@@ -7,6 +7,7 @@ let FinishedGame = ({homeTeamName, awayTeamName, homeScore, awayScore}) => {
 
       <div className="box-game">
         <Col sm={3} md={2} >
+        <Media.Heading className="date-game">Final</Media.Heading>
           <Media.Left left>
               <img width={40} height={40} src="https://yt3.ggpht.com/-cXAzzpKrBQk/AAAAAAAAAAI/AAAAAAAAAAA/MaprkNIV-MY/s900-c-k-no-rj-c0xffffff/photo.jpg" alt="Image"/>
           </Media.Left>

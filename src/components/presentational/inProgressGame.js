@@ -5,6 +5,7 @@ let InProgressGame = ({homeTeamName, homeScore, awayTeamName, awayScore, inning}
     return (
       <div className="box-game">
         <Col sm={3} md={2} >
+        <Media.Heading className="date-game">{inning}</Media.Heading>
           <Media.Left left>
               <img width={40} height={40} src="https://yt3.ggpht.com/-cXAzzpKrBQk/AAAAAAAAAAI/AAAAAAAAAAA/MaprkNIV-MY/s900-c-k-no-rj-c0xffffff/photo.jpg" alt="Image"/>
           </Media.Left>
@@ -14,8 +15,6 @@ let InProgressGame = ({homeTeamName, homeScore, awayTeamName, awayScore, inning}
             {homeTeamName}: {homeScore}
             <br/>
             {awayTeamName}: {awayScore}
-            <br/>
-            {inning}
             </div>
           </Media.Body>
         </Col>
