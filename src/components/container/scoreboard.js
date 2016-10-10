@@ -10,7 +10,7 @@ class ScoreBoard extends Component {
 
     return (
       <div>
-
+      
       <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
         <Tab eventKey={1} title="Finished Games">
           <FinishedGames games={this.props.store.finished}/>

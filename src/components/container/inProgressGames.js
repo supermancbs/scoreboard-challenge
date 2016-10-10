@@ -7,7 +7,8 @@ class InProgressGames extends Component {
 
   render() {
     var allInProgressGames = this.props.games.map((game) => {
-        return <InProgressGame homeTeamName={game.competitions[0].competitors[0].team.abbreviation} homeScore={game.competitions[0].competitors[0].score} awayTeamName={game.competitions[0].competitors[1].team.abbreviation} awayScore={game.competitions[0].competitors[1].score} inning={game.competitions[0].status.detail}/>
+      let teams = game.competitions[0]
+        return <InProgressGame homeTeamName={teams.competitors[0].team.abbreviation} homeScore={teams.competitors[0].score} awayTeamName={teams.competitors[1].team.abbreviation} awayScore={teams.competitors[1].score} inning={game.competitions[0].status.detail}/>
     })
 
     return (

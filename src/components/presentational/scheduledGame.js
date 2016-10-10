@@ -5,7 +5,7 @@ let FinishedGame = ({homeTeamName, homeTeamRecord, awayTeamName, awayTeamRecord,
 
     return (
       <div className="box-game">
-      <Col sm={3} md={2} >
+      <Col sm={3} md={2} className="add-margins">
       <Media.Heading className="date-game">{date}</Media.Heading>
         <Media.Left>
             <img width={40} height={40} src="https://yt3.ggpht.com/-cXAzzpKrBQk/AAAAAAAAAAI/AAAAAAAAAAA/MaprkNIV-MY/s900-c-k-no-rj-c0xffffff/photo.jpg" alt="Image"/>

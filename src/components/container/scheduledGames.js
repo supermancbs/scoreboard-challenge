@@ -6,8 +6,8 @@ class ScheduledGames extends Component {
 
   render() {
     var allScheduledGames = this.props.games.map((game) => {
-
-        return <ScheduledGame homeTeamName={game.competitions[0].competitors[0].team.abbreviation} homeTeamRecord={game.competitions[0].competitors[0].team.record.summary} awayTeamName={game.competitions[0].competitors[1].team.abbreviation} awayTeamRecord={game.competitions[0].competitors[1].team.record.summary} date={game.date.slice(5, 10)}/>
+        let teams = game.competitions[0]
+        return <ScheduledGame homeTeamName={teams.competitors[0].team.abbreviation} homeTeamRecord={teams.competitors[0].team.record.summary} awayTeamName={teams.competitors[1].team.abbreviation} awayTeamRecord={teams.competitors[1].team.record.summary} date={game.date.slice(5, 10)}/>
     })
 
     return (

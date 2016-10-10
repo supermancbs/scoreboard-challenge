@@ -6,7 +6,8 @@ class FinishedGames extends Component {
 
   render() {
     var allFinishedGames = this.props.games.map((game) => {
-        return <FinishedGame homeTeamName={game.competitions[0].competitors[0].team.abbreviation} awayTeamName={game.competitions[0].competitors[1].team.abbreviation} homeScore={game.competitions[0].competitors[0].score} awayScore={game.competitions[0].competitors[1].score}/>
+        let teams = game.competitions[0]
+        return <FinishedGame homeTeamName={teams.competitors[0].team.abbreviation} awayTeamName={teams.competitors[1].team.abbreviation} homeScore={teams.competitors[0].score} awayScore={teams.competitors[1].score}/>
     })
 
     return (

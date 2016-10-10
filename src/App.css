@@ -27,7 +27,37 @@
   text-align: left;
 }
 
+
 .team-name {
     font-size: 90%;
     text-align: left;
+}
+
+.box-game {
+  margin: 5px;
+  margin-left: 4cm;
+  margin-right: 4cm;
+}
+
+#winning-team {
+  color: green
+}
+
+#loosing-team {
+  color: red
+}
+
+.add-margins {
+  width:16%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  margin:1px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding:5px;
+}
+
+.add-margins:hover{
+  background: rgba(0, 0, 0, 0.3);
+
 }
